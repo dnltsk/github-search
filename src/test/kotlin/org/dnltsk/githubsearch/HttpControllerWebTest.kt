@@ -27,4 +27,10 @@ class HttpControllerWebTest {
             .andExpect(status().isOk)
     }
 
+    @Test
+    fun `search endpoint requires language parameter`() {
+        mockMvc.perform(get("/search"))
+            .andExpect(status().isBadRequest)
+    }
+
 }
