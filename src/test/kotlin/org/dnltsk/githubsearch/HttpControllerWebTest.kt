@@ -10,8 +10,8 @@ import org.springframework.boot.test.web.client.TestRestTemplate
 import org.springframework.http.HttpStatus.OK
 import org.springframework.test.context.junit4.SpringRunner
 
-@RunWith(SpringRunner::class)
 @SpringBootTest(webEnvironment = RANDOM_PORT)
+@RunWith(SpringRunner::class)
 class HttpControllerWebTest{
 
     @Autowired
