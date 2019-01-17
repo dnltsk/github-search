@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @SpringBootTest
 @RunWith(SpringRunner::class)
-class GithubWebClientTest{
+class GithubWebClientTest {
 
     @InjectMocks
     private lateinit var webClient: GithubWebClient
