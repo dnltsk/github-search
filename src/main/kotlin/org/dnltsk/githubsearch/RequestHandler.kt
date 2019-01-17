@@ -2,7 +2,6 @@ package org.dnltsk.githubsearch
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
-import java.net.URL
 
 @Service
 class RequestHandler {
@@ -14,7 +13,7 @@ class RequestHandler {
         val githubUsers = githubWebClient.loadUsers(language)
 
         return githubUsers.map {
-            User("username", "user", URL("http://link.net"), 0)
+            User(it.login, it.name, it.avatar_url, it.followers)
         }
 
     }
