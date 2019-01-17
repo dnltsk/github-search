@@ -4,3 +4,28 @@
 
 # github-search
 searching users by programming language
+
+## test
+
+`./gradlew clean test`
+
+## build
+
+`./gradlew clean bootJar`
+
+## start
+
+`java -jar build/libs/bowling-*.jar samples/game.txt`
+
+## build docker
+
+`docker build . -t github-search`
+
+## start docker
+
+`docker run -it -p 8080:8080 github-search`
+
+## access
+
+http://localhost:8080/search?language=kotlin
+
