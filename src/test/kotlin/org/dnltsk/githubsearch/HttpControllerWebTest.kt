@@ -19,7 +19,7 @@ class HttpControllerWebTest{
 
     @Test
     fun `search endpoint responds with 200OK`() {
-        val response = restTemplate.getForEntity("/search?query=kotlin", String::class.java)
+        val response = restTemplate.getForEntity("/search?language=kotlin", SearchResponse::class.java)
         assertThat(response.statusCode).isEqualTo(OK)
     }
 }
