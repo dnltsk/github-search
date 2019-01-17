@@ -15,7 +15,7 @@ searching users by programming language
 
 ## start
 
-`java -jar build/libs/bowling-*.jar samples/game.txt`
+`java -jar build/libs/githubsearch-*.jar`
 
 ## build docker
 
